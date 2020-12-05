@@ -11,8 +11,20 @@
 #include <ESP8266WiFi.h>        //Use ESP8266 functions                                              
 #include <ESP8266HTTPClient.h> //http client
 
+//connect pins:
+//      pins<---->TFT 
+//nodemcu(3v)   led
+//nodemcu(d5)   sck
+//nodemcu(d7)   sda
+//nodemcu(d4)   ad
+//nodemcu(d3)   reset
+//nodemcu(d8)   cs
+//nodemcu(g)    gnd
+//nodemcu(3v)   vcc
+
+
 // -----------  Display pins  --------------------------------------
-#define TFT_CS         15       //
+#define TFT_CS         15   //
 #define TFT_RST        0   //
 #define TFT_DC         2   // my pins - you shoud use own
                                                                        
