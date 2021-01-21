@@ -1,16 +1,15 @@
 # esp8266 get weather and time from yandex
-e
 
 This tutorial shows how to interface ESP8266 NodeMCU (ESP-12E) board with ILI9341 TFT display and get time and weather data from yandex.
 
-### Display
+## Display
 The ILI9341 TFT module contains a display controller with the same name: ILI9341. It’s a color display that uses SPI interface protocol and requires 4 or 5 control pins, it’s low cost and easy to use.
 The resolution of this TFT display is 240 x 320 which means it has 76800 pixels. This module works with 3.3V only and it doesn’t support 5V (not 5V tolerant).
 
 TFT: Thin-Film Transistor.
 SPI: Serial Peripheral Interface.
 
-### Project Hardware Required:
+## Project Hardware Required:
 
 NodeMCU board
 ILI9341 TFT display module (2.2″, 2.4″, 2.8″ …)
@@ -18,7 +17,7 @@ Micro USB cable (for programming and powering the whole circuit)
 Breadboard
 Jumper wires
 
-###  NodeMCU with ILI9341 TFT display circuit:
+##  NodeMCU with ILI9341 TFT display circuit:
 
 Project circuit schematic diagram is shown below.
 
@@ -30,10 +29,10 @@ SDI: serial data in.
 MISO: master-in slave-out.
 SDO: serial data out.
 
-![ESP8266 NodeMCU ILI9341 TFT display](https://github.com/AlexeyKirilenko/esp8266-weather-and-time-/blob/master/nodemcu-ili9341-color-tft-1024x576.jpg)
+![ESP8266 NodeMCU ILI9341 TFT display](https://user-images.githubusercontent.com/3414236/105347216-a6e4e300-5bf7-11eb-9230-e3229a8b21c1.jpg)
 
 
-![display is connected]((https://github.com/AlexeyKirilenko/esp8266-weather-and-time-/blob/master/esp8266-nodemcu-ili9341-tft-display-768x742.png)
+![display is connected](https://user-images.githubusercontent.com/3414236/105347215-a64c4c80-5bf7-11eb-9a79-cc644cbe4fbb.png)
 
 The ILI9341 TFT display is connected to the NodeMCU board as follows:
 CS pin is connected to D2 (ESP8266EX GPIO4),
@@ -45,3 +44,6 @@ VCC and BL are connected to pin 3V3,
 GND is connected to pin GND of the NodeMCU board.
 
 Pins D5 (GPIO14) and D7 (GPIO13) are hardware SPI module pins of the ESP8266EX microcontroller respectively for SCK (serial clock) and MOSI (master-out slave-in).
+
+## Results:
+![Results](https://user-images.githubusercontent.com/3414236/105347680-46a27100-5bf8-11eb-9934-3d093c39657a.jpg)
