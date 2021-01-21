@@ -8,7 +8,7 @@ The resolution of this TFT display is 240 x 320 which means it has 76800 pixels.
 TFT: Thin-Film Transistor.
 SPI: Serial Peripheral Interface.
 
-# Project Hardware Required:
+### Project Hardware Required:
 
 NodeMCU board
 ILI9341 TFT display module (2.2″, 2.4″, 2.8″ …)
