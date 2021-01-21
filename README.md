@@ -30,10 +30,10 @@ SDI: serial data in.
 MISO: master-in slave-out.
 SDO: serial data out.
 
-![ESP8266 NodeMCU ILI9341 TFT display](/nodemcu-ili9341-color-tft-1024x576.jpg)
+![ESP8266 NodeMCU ILI9341 TFT display](https://github.com/AlexeyKirilenko/esp8266-weather-and-time-/blob/master/nodemcu-ili9341-color-tft-1024x576.jpg)
 
 
-![display is connected](/esp8266-nodemcu-ili9341-tft-display-768x742.png)
+![display is connected]((https://github.com/AlexeyKirilenko/esp8266-weather-and-time-/blob/master/esp8266-nodemcu-ili9341-tft-display-768x742.png)
 
 The ILI9341 TFT display is connected to the NodeMCU board as follows:
 CS pin is connected to D2 (ESP8266EX GPIO4),
