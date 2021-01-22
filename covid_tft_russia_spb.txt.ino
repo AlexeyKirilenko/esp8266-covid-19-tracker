@@ -39,7 +39,7 @@ const char* url2 = "/apps/thinghttp/send_request?api_key= "; //death  //use your
 int To_remove;      //There are some irrelevant data on the string and here's how I keep the index
                     //of those characters 
 
-String Cases,Death,Recover,Data_Raw;  //Here I keep the numbers that I got
+String Cases,Death,Recover,Data_Raw;  //Here I keep the numbers that I got from thingspeak parsing responce
 
 WiFiClient client;      //Create a WiFi client and http client                                                     
 HTTPClient http; 
