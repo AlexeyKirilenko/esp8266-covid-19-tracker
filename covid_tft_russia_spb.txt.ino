@@ -1,4 +1,3 @@
-
 #include <Adafruit_GFX.h>       //Libraries required to use the Display
 #include <Adafruit_ST7735.h>  ////Libraries required to use the Display
 #include <SPI.h>
@@ -9,7 +8,7 @@
 #include <ESP8266HTTPClient.h> //http client
 
 //connect pins:
-//      pins<---->TFT 
+//pins<---->TFT 
 //nodemcu(3v)   led
 //nodemcu(d5)   sck
 //nodemcu(d7)   sda
@@ -204,6 +203,3 @@ void Print_TFT(){
 }
 
 //
- 
-
-  
