@@ -1,6 +1,3 @@
-/* This code works with ESP8266 12E (NodeMcu v1.0) its main function is to read the data from https://www.worldometers.info/
-  and https://xn--80aesfpebagmfblc0a.xn--p1ai/
- */
 
 #include <Adafruit_GFX.h>       //Libraries required to use the Display
 #include <Adafruit_ST7735.h>  ////Libraries required to use the Display
