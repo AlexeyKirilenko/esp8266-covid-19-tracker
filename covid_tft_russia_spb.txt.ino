@@ -7,6 +7,7 @@
 #include <ESP8266WiFi.h>        //Use ESP8266 functions                                              
 #include <ESP8266HTTPClient.h> //http client
 
+
 //connect pins:
 //pins<---->TFT 
 //nodemcu(3v)   led
@@ -24,13 +25,13 @@
 #define TFT_RST        0   //
 #define TFT_DC         2   // my pins - you shoud use own
                                                                        
-const char* ssid = " ";              //Your router SSID and password                             
-const char* password =  " ";    //Your router SSID and password
+const char* ssid = "";              //Your router SSID and password                             
+const char* password =  "";    //Your router SSID and password
 const char* host = "api.thingspeak.com";  //I read the data from this host                                   
 const int httpPortRead = 80;                                           
                                                 
-const char* url1 = "/apps/thinghttp/send_request?api_key= ";     //cases //use your own parse string from https://thingspeak.com/ 
-const char* url2 = "/apps/thinghttp/send_request?api_key= "; //death  //use your own parse string from https://thingspeak.com/  
+const char* url1 = "/apps/thinghttp/send_request?api_key=2VX3DNKEVWOHS4Q3";     //cases //use your own parse string from https://thingspeak.com/ 
+const char* url2 = "/apps/thinghttp/send_request?api_key=NMHDH1CCJVAHLOXZ"; //death  //use your own parse string from https://thingspeak.com/  
  
 int To_remove;      //There are some irrelevant data on the string and here's how I keep the index
                     //of those characters 
@@ -68,7 +69,7 @@ void setup() {
   
       
       //Reading 1: Reading of cases
-    if( http.begin(host,httpPortRead,url1))        //Connect to the host and the url                                      
+    if( http.begin(client,host,httpPortRead,url1))        //Connect to the host and the url                                      
       {
         int httpCode = http.GET();                //Check feedback if there's a response                                                  
         if (httpCode > 0)                                                              
@@ -111,7 +112,7 @@ void setup() {
  
 //Reading 2 is the same thing as reading 1
 
-    if( http.begin(host,httpPortRead,url2))                                              
+    if( http.begin(client,host,httpPortRead,url2))                                              
       {
         int httpCode = http.GET();                                                      
         if (httpCode > 0)                                                               
